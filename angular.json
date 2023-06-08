@@ -38,6 +38,9 @@
             "scripts": []
           },
           "configurations": {
+            "github-pages": {
+              "baseHref": "/card/"
+            },
             "production": {
               "budgets": [
                 {
