@@ -1,0 +1,36 @@
+.flip-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.flip-card-inner {
+    position: relative;
+    cursor: pointer;
+    -webkit-transform: transform 1s;
+    -ms-transform: transform 1s;
+    transform: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.flip-card-front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip-card-back {
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}

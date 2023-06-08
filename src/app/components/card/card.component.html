@@ -1,0 +1,12 @@
+<div class="flip-card" (click)="toggleFlip()" [@flipState]="flip">
+    <div class="flip-card-inner w-96 h-52 bg-slate-50 shadow-lg rounded-lg flex items-center justify-center">
+        <div class="flip-card-front flex flex-col items-center justify-center gap-5">
+            <p class="text-xl text-slate-800">{{person.name}}</p>
+            <p class="text-sm text-slate-700">{{person.jobTitle}}</p>
+        </div>
+        <div class="flip-card-back flex flex-col items-center justify-center gap-5">
+            <p class="text-lg text-slate-800">{{person.mail}}</p>
+            <p class="text-xs text-slate-700">{{person.address}}</p>
+        </div>
+    </div>
+</div>
